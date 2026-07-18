@@ -2,6 +2,13 @@ name: Daily Flight Price Check
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "flight_tracker.py"
+      - "requirements.txt"
+      - ".github/workflows/daily-flight-check.yml"
   schedule:
     - cron: "0 9 * * *"
       timezone: "Europe/Istanbul"
