@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: ucus-fiyat-anlik-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python instant_search_bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: SERPAPI_KEY
+        sync: false
