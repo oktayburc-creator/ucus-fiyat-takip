@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-07-20T09:19:11+03:00",
+  "route": {
+    "origins": ["IST", "SAW"],
+    "destination": "GYD",
+    "outbound_date": "2026-10-19",
+    "return_date": "2026-10-30"
+  },
+  "status": "partial_unverified",
+  "trigger_evaluation": {
+    "threshold_try": 10000,
+    "price_drop_percent_threshold": 5,
+    "notification_triggered": false,
+    "reason": "Exact-date, airline-specific round-trip fares for 2026-10-19 to 2026-10-30 could not be reliably verified from accessible public booking pages during this run. No threshold claim was inferred from nearby-date or monthly fares."
+  },
+  "previous_recorded_lowest_try": null,
+  "verified_observations": [
+    {
+      "airline": "Turkish Airlines",
+      "source": "Official Turkish Airlines Istanbul-Baku fare page",
+      "observation": "October 2026 round-trip fares on nearby dates were shown from approximately TRY 15,550-15,588, but the requested 19-30 October combination was not displayed.",
+      "exact_requested_dates_verified": false,
+      "baggage_verified": false
+    },
+    {
+      "airline": "Pegasus",
+      "source": "Google Flights route overview",
+      "observation": "Route-level October 2026 examples showed round-trip fares from about TRY 11,078 on other dates; requested exact dates were not exposed in the accessible result.",
+      "exact_requested_dates_verified": false,
+      "baggage_verified": false
+    },
+    {
+      "airline": "AJet",
+      "source": "Google Flights route overview",
+      "observation": "Route-level examples showed round-trip fares from about TRY 13,048 on other October dates; requested exact dates were not exposed in the accessible result.",
+      "exact_requested_dates_verified": false,
+      "baggage_verified": false
+    },
+    {
+      "airline": "Azerbaijan Airlines",
+      "source": "Google Flights / AZAL route pages",
+      "observation": "Route-level examples showed round-trip fares from about TRY 12,690 on other October dates. Exact requested dates were not exposed in the accessible result; AZAL public fare pages also note that baggage or optional services may add fees depending on fare.",
+      "exact_requested_dates_verified": false,
+      "baggage_verified": false
+    }
+  ],
+  "notes": [
+    "No exact-date fare, flight-time, flight-number, or baggage detail was fabricated.",
+    "This file establishes the first saved tracking record; no prior verified lowest fare was available for a percentage-drop comparison."
+  ]
+}
