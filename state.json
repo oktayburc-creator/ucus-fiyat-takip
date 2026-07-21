@@ -96,7 +96,39 @@
         }
       ],
       "errors": []
+    },
+    {
+      "checked_at": "2026-07-21T12:10:24",
+      "daily_low": 10843,
+      "airline": "Pegasus",
+      "results": [
+        {
+          "airline": "AJet",
+          "price": 12509,
+          "outbound": "2026-10-19 12:35 | SAW → GYD | 2026-10-19 16:25 | VF 177",
+          "return": "2026-10-30 06:55 | GYD → SAW | 2026-10-30 09:00 | VF 180",
+          "baggage": "Bagaj bilgisi kaynakta belirtilmedi",
+          "source": "Google Flights sonuçları (SerpApi)"
+        },
+        {
+          "airline": "Pegasus",
+          "price": 10843,
+          "outbound": "2026-10-19 23:25 | SAW → GYD | 2026-10-20 03:05 | PC 854",
+          "return": "2026-10-30 04:05 | GYD → SAW | 2026-10-30 06:10 | PC 855",
+          "baggage": "Bagaj bilgisi kaynakta belirtilmedi",
+          "source": "Google Flights sonuçları (SerpApi)"
+        },
+        {
+          "airline": "Türk Hava Yolları",
+          "price": 16149,
+          "outbound": "2026-10-19 01:35 | IST → GYD | 2026-10-19 05:25 | TK 338",
+          "return": "2026-10-30 17:35 | GYD → IST | 2026-10-30 19:50 | TK 341",
+          "baggage": "Bagaj bilgisi kaynakta belirtilmedi",
+          "source": "Google Flights sonuçları (SerpApi)"
+        }
+      ],
+      "errors": []
     }
   ],
-  "last_run": "2026-07-20T13:27:14"
+  "last_run": "2026-07-21T12:10:24"
 }
