@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-08-09T08:57:00+03:00",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "previous_lowest_tl": 10824,
+  "status": "partial_unverified",
+  "notification_sent": false,
+  "reason": "Current check could not be fully verified because SerpApi returned HTTP 429 Too Many Requests during the Turkish Airlines lookup. No threshold alert was issued from incomplete data.",
+  "source": "Google Flights via SerpApi / GitHub Actions",
+  "errors": [
+    "Turkish Airlines lookup: HTTP 429 Too Many Requests",
+    "State commit from the manual rerun was rejected because the run was based on an older commit and remote main had newer commits"
+  ]
+}
