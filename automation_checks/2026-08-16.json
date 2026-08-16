@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-08-16T09:00:30+03:00",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "previous_lowest_tl": 10824,
+  "status": "partial_unverified",
+  "notification_sent": false,
+  "reason": "Exact 19 Oct 2026 / 30 Oct 2026 round-trip fares could not be independently verified from accessible public pages during this run. Google Flights route-level data confirmed all four target airlines operate nonstop and showed current route-level starting fares for other October date pairs, but those cannot be substituted for the requested dates. No threshold alert was issued from incomplete data.",
+  "public_route_snapshot": {
+    "source": "Google Flights",
+    "observed_route_level_starting_fares_try": {
+      "Pegasus": 11094,
+      "AJet": 12292,
+      "Azerbaijan Airlines": 12714,
+      "Turkish Airlines": 13629
+    },
+    "note": "These are route-level fares for other October 2026 date pairs, not the requested 19 Oct / 30 Oct itinerary."
+  },
+  "bag_information": "Not verified for the requested itinerary.",
+  "sources": [
+    "Google Flights public Istanbul-Baku route page",
+    "Existing GitHub state.json history"
+  ],
+  "errors": [
+    "Exact-date fare pages/results were not exposed by accessible public search results during this run."
+  ]
+}
