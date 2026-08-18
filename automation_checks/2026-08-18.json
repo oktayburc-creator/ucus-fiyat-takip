@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-08-18T09:09:21+03:00",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "previous_lowest_tl": 10824,
+  "status": "partial_verified",
+  "notification_sent": false,
+  "reason": "Pegasus exact-date round-trip fare was exposed by Skyscanner for 19 Oct 2026 / 30 Oct 2026. Exact-date fares for AJet, Turkish Airlines and Azerbaijan Airlines were not independently exposed by accessible public pages during this run, so they were not estimated. The verified Pegasus fare was above the 10,000 TL threshold and was only about 1.9% below the previous recorded low, short of the 5% alert threshold.",
+  "verified_results": [
+    {
+      "airline": "Pegasus Airlines",
+      "total_price_original": "SAR 839",
+      "total_price_normalized_try_approx": 10619,
+      "normalization_rate": "1 SAR = 12.6567 TRY",
+      "outbound": "2026-10-19 SAW-GYD, direct; exact time/flight number not exposed in accessible result",
+      "return": "2026-10-30 GYD-SAW, direct; exact time/flight number not exposed in accessible result",
+      "baggage": "Not verified in accessible result",
+      "source": "Skyscanner public route result"
+    }
+  ],
+  "unverified_airlines": [
+    "AJet",
+    "Turkish Airlines",
+    "Azerbaijan Airlines (AZAL)"
+  ],
+  "thresholds": {
+    "absolute_alert_tl": 10000,
+    "five_percent_below_previous_low_tl": 10282.8
+  },
+  "observed_change_vs_previous_low_percent": -1.8942,
+  "sources": [
+    "Skyscanner Istanbul-Baku public route result",
+    "Investing.com SAR/TRY current rate",
+    "Existing GitHub state.json history"
+  ],
+  "errors": [
+    "Exact-date fares/times/baggage for AJet, Turkish Airlines and AZAL were not exposed by accessible public search results during this run."
+  ]
+}
