@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-08-24T09:03:04+03:00",
+  "route": {
+    "origins": ["IST", "SAW"],
+    "destination": "GYD",
+    "outbound_date": "2026-10-19",
+    "return_date": "2026-10-30"
+  },
+  "previous_recorded_lowest_try": 10824,
+  "latest_fully_recorded_check": {
+    "checked_at": "2026-08-23T06:46:36Z",
+    "daily_low_try": 11261,
+    "airline": "Pegasus",
+    "results": [
+      {
+        "airline": "AJet",
+        "roundtrip_total_try": 11864,
+        "outbound": "2026-10-19 12:35 | SAW -> GYD | 2026-10-19 16:25 | VF 177",
+        "return": "2026-10-30 06:55 | GYD -> SAW | 2026-10-30 09:00 | VF 180",
+        "baggage": "Kaynakta belirtilmedi",
+        "source": "Google Flights / SerpApi"
+      },
+      {
+        "airline": "Pegasus",
+        "roundtrip_total_try": 11261,
+        "outbound": "2026-10-19 23:25 | SAW -> GYD | 2026-10-20 03:05 | PC 854",
+        "return": "2026-10-30 04:05 | GYD -> SAW | 2026-10-30 06:10 | PC 855",
+        "baggage": "Kaynakta belirtilmedi",
+        "source": "Google Flights / SerpApi"
+      },
+      {
+        "airline": "Turk Hava Yollari",
+        "roundtrip_total_try": 19039,
+        "outbound": "2026-10-19 01:35 | IST -> GYD | 2026-10-19 05:25 | TK 338",
+        "return": "2026-10-30 17:35 | GYD -> IST | 2026-10-30 19:50 | TK 341",
+        "baggage": "Kaynakta belirtilmedi",
+        "source": "Google Flights / SerpApi"
+      }
+    ]
+  },
+  "current_public_source_check": {
+    "AJet": {
+      "status": "partial",
+      "verified": "19 Ekim 2026 SAW-GYD direkt AJet seferi Trip.com sonucunda gorunuyor; exact 30 Ekim donusle normalize gidiş-donus toplam fiyat doğrulanamadi.",
+      "source": "Trip.com"
+    },
+    "Pegasus": {
+      "status": "partial",
+      "verified": "19 Ekim 2026 SAW-GYD direkt Pegasus 23:25-03:05 seferi güncel Trip.com sonucunda gorunuyor; exact 30 Ekim donusle normalize gidiş-donus toplam fiyat doğrulanamadi.",
+      "source": "Trip.com"
+    },
+    "Turk Hava Yollari": {
+      "status": "partial",
+      "verified": "THY resmi sayfasinda Ekim 2026 Istanbul-Baku gidiş-donus ekonomi başlangic seviyesi TRY 18,224 olarak güncel görünüyor; 19-30 Ekim tarih çifti için exact toplam fiyat doğrulanamadi.",
+      "source": "Turkish Airlines official"
+    },
+    "Azerbaijan Airlines (AZAL)": {
+      "status": "unverified",
+      "verified": "19-30 Ekim 2026 tarih çifti için karşılaştırılabilir güncel gidiş-donus toplam fiyat güvenilir biçimde doğrulanamadi.",
+      "source": null
+    }
+  },
+  "threshold_evaluation": {
+    "status": "inconclusive_current_exact_fares",
+    "alert_sent": false,
+    "reason": "Bugünkü exact tarih çifti için dört havayolunun karşılaştırılabilir gidiş-donus toplam fiyatlari tam doğrulanamadigi için eşik veya yuzde 5 dusus koşulunun oluştuğu varsayilmadi. Tahmin yapılmadı."
+  }
+}
