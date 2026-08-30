@@ -131,7 +131,6 @@ def choose_cheapest_roundtrip_for_airline(canonical: str) -> dict[str, Any] | No
         ]
         outbound_options.sort(key=lambda x: price_value(x) or 10**9)
 
-        # API kullanımını kontrollü tutmak için havayolu/çıkış havalimanı başına en iyi 3 gidişi inceler.
         for outbound in outbound_options[:3]:
             return_data = serpapi_search(
                 {
@@ -236,12 +235,29 @@ def main() -> int:
             result = choose_cheapest_roundtrip_for_airline(airline)
             if result:
                 results.append(result)
-        except Exception as exc:  # Bir havayolu başarısız olsa da diğerlerini kontrol et.
+            else:
+                errors.append(f"{airline}: uygun/doğrulanabilir sonuç bulunamadı")
+        except Exception as exc:
             errors.append(f"{airline}: {exc}")
 
+    checked_at = datetime.now().isoformat(timespec="seconds")
+
     if not results:
-        message = "⚠️ Uçuş fiyat kontrolü tamamlanamadı. Doğrulanabilir fiyat bulunamadı.\n" + "\n".join(errors[:4])
-        send_telegram(message)
+        history = state.get("history", [])
+        history.append(
+            {
+                "checked_at": checked_at,
+                "daily_low": None,
+                "airline": None,
+                "results": [],
+                "errors": errors,
+            }
+        )
+        state["history"] = history[-120:]
+        state["last_run"] = checked_at
+        save_state(state)
+        for error in errors:
+            print(error, file=sys.stderr)
         return 1
 
     cheapest = min(results, key=lambda x: x["price"])
@@ -259,7 +275,7 @@ def main() -> int:
     history = state.get("history", [])
     history.append(
         {
-            "checked_at": datetime.now().isoformat(timespec="seconds"),
+            "checked_at": checked_at,
             "daily_low": current_low,
             "airline": cheapest["airline"],
             "results": results,
@@ -268,12 +284,11 @@ def main() -> int:
     )
     state["history"] = history[-120:]
     state["lowest_ever"] = current_low if previous_low is None else min(previous_low, current_low)
-    state["last_run"] = datetime.now().isoformat(timespec="seconds")
+    state["last_run"] = checked_at
     save_state(state)
 
-    # Kullanıcı günlük Telegram raporu istediği için her kontrolde mesaj gönderilir;
-    # eşik veya %5 düşüş olduğunda mesaj ayrıca alarm olarak işaretlenir.
-    send_telegram(format_report(results, alert_reasons, previous_low))
+    if alert_reasons:
+        send_telegram(format_report(results, alert_reasons, previous_low))
 
     for error in errors:
         print(error, file=sys.stderr)
