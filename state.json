@@ -1156,7 +1156,41 @@
       "errors": [
         "Azerbaijan Airlines (AZAL): uygun/doğrulanabilir sonuç bulunamadı"
       ]
+    },
+    {
+      "checked_at": "2026-08-31T13:07:10",
+      "daily_low": 13512,
+      "airline": "AJet",
+      "results": [
+        {
+          "airline": "AJet",
+          "price": 13512,
+          "outbound": "2026-10-19 23:50 | SAW → GYD | 2026-10-20 03:40 | VF 179",
+          "return": "2026-10-30 06:55 | GYD → SAW | 2026-10-30 09:00 | VF 180",
+          "baggage": "Bagaj bilgisi kaynakta belirtilmedi",
+          "source": "Google Flights sonuçları (SerpApi)"
+        },
+        {
+          "airline": "Pegasus",
+          "price": 13544,
+          "outbound": "2026-10-19 18:30 | SAW → ESB → GYD | 2026-10-20 03:05 | PC 2670, PC 1720",
+          "return": "2026-10-30 04:05 | GYD → SAW | 2026-10-30 06:10 | PC 855",
+          "baggage": "Bagaj bilgisi kaynakta belirtilmedi",
+          "source": "Google Flights sonuçları (SerpApi)"
+        },
+        {
+          "airline": "Türk Hava Yolları",
+          "price": 21357,
+          "outbound": "2026-10-19 01:35 | IST → GYD | 2026-10-19 05:25 | TK 338",
+          "return": "2026-10-30 17:35 | GYD → IST | 2026-10-30 19:50 | TK 341",
+          "baggage": "Bagaj bilgisi kaynakta belirtilmedi",
+          "source": "Google Flights sonuçları (SerpApi)"
+        }
+      ],
+      "errors": [
+        "Azerbaijan Airlines (AZAL): uygun/doğrulanabilir sonuç bulunamadı"
+      ]
     }
   ],
-  "last_run": "2026-08-30T11:33:18"
+  "last_run": "2026-08-31T13:07:10"
 }
