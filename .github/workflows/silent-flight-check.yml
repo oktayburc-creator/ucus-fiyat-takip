@@ -1,0 +1,52 @@
+name: Silent Flight Price Check
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "silent_flight_check.py"
+      - ".github/workflows/silent-flight-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check-flights-silently:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run silent flight check
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python silent_flight_check.py
+
+      - name: Save automation result
+        if: always()
+        run: |
+          if [ ! -f automation_state.json ]; then
+            echo "automation_state.json was not produced"
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add automation_state.json
+          if git diff --cached --quiet; then
+            echo "No automation state changes to commit."
+            exit 0
+          fi
+          git commit -m "Update silent flight check result"
+          git push
