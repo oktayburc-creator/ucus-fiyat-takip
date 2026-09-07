@@ -8,6 +8,7 @@ OUTPUT_PATH = Path("automation_state.json")
 
 
 def main() -> int:
+    # Silent automation check: write comparable fares to automation_state.json.
     previous = load_state()
     previous_low = previous.get("lowest_ever")
     results = []
