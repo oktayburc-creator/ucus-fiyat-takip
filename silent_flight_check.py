@@ -7,8 +7,16 @@ from flight_tracker import TARGET_AIRLINES, choose_cheapest_roundtrip_for_airlin
 OUTPUT_PATH = Path("automation_state.json")
 
 
+def safe_error(exc: Exception) -> str:
+    text = str(exc)
+    if "429" in text:
+        return "SerpApi geçici olarak 429 Too Many Requests döndürdü; fiyat doğrulanamadı."
+    if "401" in text or "403" in text:
+        return "SerpApi kimlik doğrulama/yetki hatası verdi; fiyat doğrulanamadı."
+    return f"Uçuş fiyatı doğrulanamadı ({exc.__class__.__name__})."
+
+
 def main() -> int:
-    # Silent automation check: write comparable fares to automation_state.json.
     previous = load_state()
     previous_low = previous.get("lowest_ever")
     results = []
@@ -22,7 +30,7 @@ def main() -> int:
             else:
                 errors.append(f"{airline}: doğrulanabilir sonuç bulunamadı")
         except Exception as exc:
-            errors.append(f"{airline}: {exc}")
+            errors.append(f"{airline}: {safe_error(exc)}")
 
     current_low = min((item["price"] for item in results), default=None)
     drop_percent = None
