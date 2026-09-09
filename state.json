@@ -1411,7 +1411,19 @@
         "Türk Hava Yolları: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&show_hidden=true&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
         "Azerbaijan Airlines (AZAL): 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&show_hidden=true&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true"
       ]
+    },
+    {
+      "checked_at": "2026-09-09T10:58:20",
+      "daily_low": null,
+      "airline": null,
+      "results": [],
+      "errors": [
+        "AJet: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&show_hidden=true&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
+        "Pegasus: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&show_hidden=true&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
+        "Türk Hava Yolları: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&show_hidden=true&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
+        "Azerbaijan Airlines (AZAL): 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&show_hidden=true&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true"
+      ]
     }
   ],
-  "last_run": "2026-09-08T10:54:02"
+  "last_run": "2026-09-09T10:58:20"
 }
