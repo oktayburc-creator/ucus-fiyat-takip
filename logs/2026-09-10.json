@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-10T09:14:03+03:00",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "status": "price_verification_failed",
+  "previous_lowest_tl": 10824,
+  "current_lowest_tl": null,
+  "alert": false,
+  "errors": {
+    "AJet": "SerpApi returned HTTP 429 Too Many Requests; current price could not be verified.",
+    "Pegasus": "SerpApi returned HTTP 429 Too Many Requests; current price could not be verified.",
+    "Türk Hava Yolları": "SerpApi returned HTTP 429 Too Many Requests; current price could not be verified.",
+    "Azerbaijan Airlines (AZAL)": "SerpApi returned HTTP 429 Too Many Requests; current price could not be verified."
+  },
+  "note": "No price, baggage condition, or fare rule was estimated. Alert thresholds were not evaluated because no current comparable fare was verified."
+}
