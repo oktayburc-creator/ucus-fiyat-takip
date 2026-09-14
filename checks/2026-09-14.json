@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-09-14T09:26:40+03:00",
+  "route": "Istanbul (IST/SAW) - Baku (GYD)",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "previous_lowest_verified_try": 10824,
+  "current_lowest_verified_try": null,
+  "alert_triggered": false,
+  "alert_evaluation": "Exact-date, comparable round-trip totals for all requested airlines could not be verified in this run, so the 10000 TRY and 5% drop conditions were not evaluated as met.",
+  "airlines": {
+    "AJet": {
+      "total_price_try": null,
+      "outbound": null,
+      "return": null,
+      "baggage": "not verified for exact target itinerary",
+      "source_status": "AJet official fare page was reachable, but no exact IST/SAW-GYD 19 Oct / 30 Oct round-trip fare was exposed in searchable results."
+    },
+    "Pegasus": {
+      "total_price_try": null,
+      "outbound": null,
+      "return": null,
+      "baggage": "not verified for exact target itinerary",
+      "source_status": "Searchable current sources showed Pegasus on the route, but not a verifiable exact 19 Oct / 30 Oct same-airline round-trip total."
+    },
+    "Turkish Airlines": {
+      "total_price_try": null,
+      "outbound": null,
+      "return": null,
+      "baggage": "not verified for exact target itinerary",
+      "source_status": "KAYAK showed nearby October Turkish Airlines direct deals, but not the exact 19 Oct / 30 Oct pair."
+    },
+    "Azerbaijan Airlines (AZAL)": {
+      "total_price_try": null,
+      "outbound": null,
+      "return": null,
+      "baggage": "not verified for exact target itinerary",
+      "source_status": "KAYAK and Trip.com showed nearby October AZAL fares and schedules, but not a verifiable exact 19 Oct / 30 Oct round-trip total."
+    }
+  },
+  "evidence": [
+    "KAYAK Istanbul (IST)-Baku (GYD) page crawled 2026-09-12 showed nearby October AZAL and Turkish Airlines round-trip deals but not the exact requested date pair.",
+    "Trip.com SAW-GYD page crawled in the prior week showed AZAL exact one-way schedule examples around Oct 19/30, but not the exact requested round-trip combination.",
+    "AJet official fares page crawled 2026-09-13/14 was reachable but did not expose the requested route/date fare in searchable results."
+  ]
+}
