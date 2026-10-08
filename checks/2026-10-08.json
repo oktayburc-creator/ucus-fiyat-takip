@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-08",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "lowest_ever_before": 8732,
+  "daily_low": null,
+  "results": [],
+  "partial_offers": [
+    {
+      "airline": "AJet",
+      "type": "one_way",
+      "date": "2026-10-19",
+      "route": "SAW-GYD",
+      "price_from": 5716,
+      "currency": "TRY",
+      "source": "https://ajet.com/tr-tr/en-uygun-istanbul-kalkisli-baku-varisli-ucak-bileti"
+    },
+    {
+      "airline": "AZAL",
+      "type": "one_way",
+      "date": "2026-10-19",
+      "route": "IST-GYD",
+      "price_from": 195,
+      "currency": "AZN",
+      "source": "https://www.azal.az/az/flights-from-istanbul-to-baku"
+    },
+    {
+      "airline": "AZAL",
+      "type": "one_way",
+      "date": "2026-10-30",
+      "route": "GYD-IST",
+      "price_from": 201,
+      "currency": "AZN",
+      "source": "https://www.azal.az/az/flights-from-baku-to-istanbul"
+    }
+  ],
+  "errors": [
+    "No same-itinerary verified round-trip total for AJet, Pegasus, THY, AZAL",
+    "Flight numbers and baggage terms not verified for these exact fare combinations"
+  ],
+  "alert": "not_evaluable",
+  "note": "One-way starting fares are not used to assert a round-trip price or trigger alerts. Existing historic low unchanged."
+}
