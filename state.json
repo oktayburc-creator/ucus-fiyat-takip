@@ -2267,7 +2267,19 @@
       "errors": [
         "Azerbaijan Airlines (AZAL): uygun/doğrulanabilir sonuç bulunamadı"
       ]
+    },
+    {
+      "checked_at": "2026-10-10T12:08:57",
+      "daily_low": null,
+      "airline": null,
+      "results": [],
+      "errors": [
+        "AJet: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=SAW&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&departure_token=WyJDalJJVEcxeWRuSjRTak5hT1d0QlJWWkhXbWRDUnkwdExTMHRMUzE1YkcweE5DMXVNVUZCUVVGQlIzSkxTM1JaU25JeVF6QkJFZ1ZXUmpFM09Sb0xDT1QxU1JBQ0dnTlVVbGs0SEhDZHdBRT0iLFtbIlNBVyIsIjIwMjYtMTAtMTkiLCJHWUQiLG51bGwsIlZGIiwiMTc5Il1dXQ%3D%3D&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
+        "Pegasus: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=SAW&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&departure_token=WyJDalJJVEcxeWRuSjRTak5hT1d0QlJWWkhXbWRDUnkwdExTMHRMUzE1YkcweE5DMXVNVUZCUVVGQlIzSkxTM1JaU25JeVF6QkJFZzFRUXpJMk5qWjhVRU14TnpJd0dnc0lrTjVuRUFJYUExUlNXVGdjY09LTkFnPT0iLFtbIlNBVyIsIjIwMjYtMTAtMTkiLCJFU0IiLG51bGwsIlBDIiwiMjY2NiJdLFsiRVNCIiwiMjAyNi0xMC0xOSIsIkdZRCIsbnVsbCwiUEMiLCIxNzIwIl1dXQ%3D%3D&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
+        "Türk Hava Yolları: 429 Client Error: Too Many Requests for url: https://serpapi.com/search.json?departure_id=IST&arrival_id=GYD&outbound_date=2026-10-19&return_date=2026-10-30&departure_token=WyJDalJJTlVreFdHeG5SbmRYVFd0QlQyaGZhSGRDUnkwdExTMHRMUzB0TFMxdmEzVjJOa0ZCUVVGQlIzSkxTM1JKVDI5TU1WTkJFZ1ZVU3pNek9Cb0xDT1h0V1JBQ0dnTlVVbGs0SEhEVzZRRT0iLFtbIklTVCIsIjIwMjYtMTAtMTkiLCJHWUQiLG51bGwsIlRLIiwiMzM4Il1dXQ%3D%3D&engine=google_flights&api_key=4f4446df650950b9cc7b548e2cd1c63a419514db9b6bdb087defbe68ce0ec537&currency=TRY&hl=tr&gl=tr&type=1&travel_class=1&deep_search=true",
+        "Azerbaijan Airlines (AZAL): uygun/doğrulanabilir sonuç bulunamadı"
+      ]
     }
   ],
-  "last_run": "2026-10-09T12:51:06"
+  "last_run": "2026-10-10T12:08:57"
 }
