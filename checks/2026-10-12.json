@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-12T09:16:26+03:00",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "status": "unverified",
+  "lowest_ever_previous_tl": 8732,
+  "verified_current_roundtrip_low_tl": null,
+  "airlines": [
+    "AJet",
+    "Pegasus",
+    "Turkish Airlines",
+    "Azerbaijan Airlines"
+  ],
+  "sources": [
+    "https://ajet.com/tr-tr/en-uygun-istanbul-kalkisli-baku-varisli-ucak-bileti",
+    "https://www.turkishairlines.com/tr/istanbul-kalkisli-baku-varisli-ucak-bileti",
+    "https://www.azal.az/ru/flights-from-istanbul-to-baku",
+    "https://us.trip.com/flights/city-ist-airport-gyd/"
+  ],
+  "notes": [
+    "AJet official site listed 6365 TRY one-way for 2026-10-19, not a roundtrip price.",
+    "THY displayed monthly October roundtrip from 14603 TRY, not the requested date pair.",
+    "No confirmed exact-date comparable roundtrip fares, baggage terms or flight combinations for all four airlines.",
+    "No threshold assessment possible; no alert issued."
+  ]
+}
