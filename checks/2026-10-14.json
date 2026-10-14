@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-14",
+  "outbound": "2026-10-19",
+  "return": "2026-10-30",
+  "status": "unverified_partial",
+  "lowest_verified_roundtrip_try": null,
+  "previous_lowest_try": 8732,
+  "alert": false,
+  "airlines": {
+    "AJet": {
+      "outbound_oneway_try": 6370,
+      "return_oneway": null
+    },
+    "AZAL": {
+      "outbound_oneway_usd": 128,
+      "return_oneway_usd": 133
+    },
+    "Pegasus": {
+      "roundtrip": null
+    },
+    "THY": {
+      "roundtrip": null
+    }
+  },
+  "baggage": "Not verified for these fares",
+  "notes": "One-way advertised starting fares cannot be treated as a bookable roundtrip total. Flight times and numbers not verified.",
+  "sources": [
+    "https://ajet.com/tr-tr/en-uygun-istanbul-kalkisli-baku-varisli-ucak-bileti",
+    "https://www.azal.az/en/flights-from-istanbul-to-baku",
+    "https://www.azal.az/en/flights-from-baku-to-istanbul"
+  ]
+}
