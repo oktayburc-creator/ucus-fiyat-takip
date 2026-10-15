@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-15T08:38:06+03:00",
+  "route": "IST/SAW-GYD",
+  "outbound_date": "2026-10-19",
+  "return_date": "2026-10-30",
+  "status": "unverified_partial",
+  "daily_low": null,
+  "previous_lowest_ever_try": 8732,
+  "threshold_alert": false,
+  "drop_alert": false,
+  "notification_sent": false,
+  "notes": [
+    "AJet official: 19 Oct SAW-GYD one-way from TRY 6365; 30 Oct return and baggage unverified.",
+    "Pegasus: no date-specific verifiable round-trip total, flight times or baggage.",
+    "Turkish Airlines: no date-specific verifiable round-trip total, flight times or baggage.",
+    "AZAL official: 19 Oct IST-BAK one-way from USD 142 and 30 Oct BAK-IST one-way from USD 133. Sum USD 275 is not a verified round-trip booking fare; flight times and baggage unverified.",
+    "Previous lowest confirmed fare TRY 8732 unchanged. Cannot assess current threshold without a verified comparable round-trip fare."
+  ],
+  "sources": [
+    "https://ajet.com/tr-tr/en-uygun-istanbul-kalkisli-baku-varisli-ucak-bileti",
+    "https://www.azal.az/en/flights-from-istanbul-to-baku",
+    "https://www.azal.az/en/flights-from-baku-to-istanbul",
+    "https://www.flypgs.com/sehirler/istanbul-baku-ucak-bileti",
+    "https://www.turkishairlines.com/en/flights-from-istanbul-to-baku"
+  ]
+}
